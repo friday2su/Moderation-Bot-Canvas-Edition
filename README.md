@@ -26,51 +26,6 @@ A premium Discord moderation bot featuring high-quality visual responses using C
     ```
 
 3.  **Run the Bot**:
-    ```bash
-    # friday2su — Moderation Bot (Canvas Edition)
-
-    A Discord moderation bot focused on high-quality visual moderation responses (via Canvas), modular command organization, and support for both Slash and Prefix commands.
-
-    **Key features**
-    - **Visual moderation cards**: Actions like ban, kick, warn, and timeout generate an image card for clearer context.
-    - **Slash + Prefix**: Commands support both Discord Slash commands and traditional prefix commands.
-    - **Modular layout**: Commands and utilities are organized under `src/` for easy extension.
-    - **Configurable emojis**: Centralized in `src/config/emojis.js` for quick customization.
-
-    ## Repository Contents
-
-    - `index.js` — Bot entrypoint and command loader.
-    - `src/commands/general/` — General commands (avatar, botinfo, ping, poll, serverinfo, userinfo).
-    - `src/commands/moderation/` — Moderation commands (ban, kick, lock, unlock, nick, purge, role, slowmode, timeout, unban, warn).
-    - `src/config/emojis.js` — Emoji definitions used across commands.
-    - `src/utils/canvasHelper.js` — Helpers to generate Canvas images for moderation actions.
-
-    ## Installation
-
-    Prerequisites:
-    - Node.js 16+ (or the version you use in production).
-
-    Install dependencies:
-    ```powershell
-    npm install
-    ```
-
-    Note: `canvas` can require native build tools on Windows. If you hit build errors, follow the node-canvas Windows install guide: https://github.com/Automattic/node-canvas/wiki/Installation:-Windows
-
-    ## Configuration
-
-    Create a `.env` in the repository root with these values:
-    ```env
-    DISCORD_TOKEN=your_bot_token
-    CLIENT_ID=your_client_id
-    PREFIX=!
-    ```
-
-    Adjust `PREFIX` to your preferred prefix (default `!`). Update `src/config/emojis.js` to customize emoji reactions.
-
-    ## Running
-
-    Start the bot:
     ```powershell
     node index.js
     ```
